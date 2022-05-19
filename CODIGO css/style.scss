@@ -1,0 +1,83 @@
+/*OBJETIVO: INICIO -> SE APLICA SASS-I SÓLO AL INDEX Y SE LINKEA STYLE(ARCHIVO SASS) AL INDEX*/
+//importamos las fuentes
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+//importamos los Partials
+@import "_variables";
+@import "_general";
+@import "_menu";
+@import "_contacto";
+@import "_inicioregistro";
+@import "_nosotros";
+@import "_producto";
+
+/*  inicio de carrousel +REDES  */
+.carru{
+    width: $var1;
+/* border: 2px solid black;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    .carousel{
+        width: $var1;
+    }
+    .carousel-indicators > li{
+        border-radius: $var2;
+        height: 15px;
+        width: 15px;
+    }
+    .section2{
+        font-family: $font2;
+        margin-top: 250px;
+    }
+    .tex{
+        font-size: map-get($titulos, titulo1);
+        text-align: center;
+        margin-top: $size1 + 10;;
+        margin-bottom: $size1 + 10;
+        color: $color2;
+        font-family: $font2;
+    }
+    .import{
+        font-size: map-get($titulos , titulo2 );
+        text-align: center;
+        color: $color2;
+    }
+}
+/*  fin de carrosel +REDES  */
+
+/*inicio titulos con h1 y h2*/
+.cabezal{
+    width: $var1;
+    h1{
+        color: $color2;
+        margin-top: $size1;
+        margin-bottom: $size1 + 10;
+        /*background-color: rgb(176,167,129,0.9);*/
+        border-radius: 1em;
+        font-family: $font4;
+        
+    }
+    h2{
+        background-color: $color1;
+        border-radius: 1em;
+        font-family: $font5;
+        color: $color2;
+        width: $var1;
+        margin-bottom: $size1 + 60;
+    }
+}
+/*fin titulos con  h1 y h2*/
+
+
+
+
+
+
+
+
