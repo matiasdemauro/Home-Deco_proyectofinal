@@ -1,6 +1,6 @@
 /*INICIO PAG DE CONTACTO*/
 .rectangulo{
-    width: $var1;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,12 +12,12 @@
         border: none;
         outline: none;
         @extend .rectangulo;
-        width: $width - 180;
+        width: 100%;
     }
     .form-group{
         width: $var1;
         text-align: center;
-        
+        font-weight: 500;
     }
     .form-control{
         width: $var1;
@@ -43,13 +43,14 @@
         color: $color2;
         @extend .rectangulo;
         margin-bottom: $size1 - 5;
+        font-weight: 500;
     }
     .btn:hover{
         width: ($var1)-20;
         border: none;
         background: $color1;
         outline: none;
-        color: $color2;
+        color: $color4;
     }
 }
 /* FIN PAG DE CONTACTO*/

@@ -105,8 +105,8 @@
   justify-content: center;
   justify-content: space-between;
   justify-content: space-around;
-  height: 200px;
-  margin-top: 60px;
+  margin-top: 80px;
+  flex-wrap: wrap;
 }
 * footer .superior-foot .cubos {
   margin-top: 30px;
@@ -115,10 +115,10 @@
   margin-bottom: 50px;
 }
 * footer .superior-foot ul {
-  font-size: 15px;
+  font-size: 20px;
 }
 * footer .superior-foot li {
-  font-size: 12px;
+  font-size: 13px;
   list-style: none;
   line-height: 2em;
   padding-bottom: 2px;
@@ -129,10 +129,7 @@
   border: 2px solid black;
   padding: 0;
   margin-top: 300px;
-  background-color: rgba(176, 167, 129, 0.9);
-}
-* footer .pie {
-  margin-top: 90px;
+  background-color: rgba(176, 167, 129, 0.5);
 }
 * footer h3 {
   font-size: 15px;
@@ -148,14 +145,15 @@
   margin-bottom: 50px;
 }
 * footer .redes a {
-  color: rgb(0, 0, 0);
   margin-bottom: -40px;
+  justify-content: space-between;
+  margin-right: 15px;
 }
 
 /*fin de estilos generales*/
 /* COMIENZO DE MENU */
 .navbar-nav {
-  background-color: rgba(176, 167, 129, 0.9);
+  background-color: rgba(176, 167, 129, 0.5);
   flex-direction: row;
   border-radius: 1em;
 }
@@ -167,14 +165,16 @@
   position: absolute;
   display: none;
   list-style: none;
-  background-color: rgba(176, 167, 129, 0.9);
+  background-color: rgba(176, 167, 129, 0.5);
   width: 150px;
   border-radius: 10px;
+  z-index: 2;
 }
 .navbar-nav li:hover ul {
   display: block;
   color: rgb(0, 0, 0);
   text-decoration: none;
+  z-index: 2;
 }
 
 /* FIN DE MENU */
@@ -189,14 +189,15 @@
 .rectangulo .form, .rectangulo .section, .section .form, .section .section {
   background: rgba(176, 167, 129, 0.5);
   border-radius: 1em;
-  box-shadow: 0 0 20px 0 rgba(176, 167, 129, 0.9);
+  box-shadow: 0 0 20px 0 rgba(176, 167, 129, 0.5);
   border: none;
   outline: none;
-  width: 320px;
+  width: 100%;
 }
 .rectangulo .form-group, .section .form-group {
   width: 100%;
   text-align: center;
+  font-weight: 500;
 }
 .rectangulo .form-control, .section .form-control {
   width: 100%;
@@ -221,13 +222,14 @@
   outline: none;
   color: rgb(0, 0, 0);
   margin-bottom: 15px;
+  font-weight: 500;
 }
 .rectangulo .btn:hover, .section .btn:hover {
   width: 80%;
   border: none;
-  background: rgba(176, 167, 129, 0.9);
+  background: rgba(176, 167, 129, 0.5);
   outline: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 /* FIN PAG DE CONTACTO*/
@@ -255,22 +257,28 @@
 /*------------FIN DE INICIAR SESION/REGISTRO--------------*/
 /*  inicio de nosotros */
 h1 {
-  margin-top: 30px;
+  margin-top: 90px;
+  margin-bottom: 50px;
 }
 
 .about-us {
   text-align: center;
   color: rgb(0, 0, 0);
   font-family: "Quicksand", sans-serif;
-  font-size: 28px;
+  font-size: 25px;
+  font-weight: 600;
   margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .about-us span {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   font-family: monospace;
-  font-size: 18px;
+  font-size: 15px;
   white-space: nowrap;
   border-right: 4px solid;
   width: 32ch;
@@ -303,12 +311,38 @@ h1 {
   font-family: "Quicksand", sans-serif;
   color: black;
   font-size: 20px;
+  background-color: rgba(176, 167, 129, 0.5);
+  padding: 10px;
+  border-radius: 1em;
+  font-weight: 600;
 }
 
 .general1 {
   font-family: "Merriweather Sans", sans-serif;
   color: black;
   font-size: 25px;
+  background-color: rgba(176, 167, 129, 0.5);
+  padding: 10px;
+  border-radius: 1em;
+  font-weight: 600;
+}
+
+.main {
+  padding: 0;
+}
+
+.contenedor {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor img {
+  margin-bottom: 30px;
+  border-radius: 1em;
 }
 
 /*fin de nosotros*/
@@ -318,127 +352,195 @@ html {
 }
 
 .foto-1:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-2:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-3:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-4:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-5:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-6:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-7:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-8:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-9:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-10:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-11:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-12:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-13:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-14:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-15:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-16:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-17:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-18:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-19:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-20:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-21:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-22:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-23:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-24:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-25:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-26:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-27:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-28:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-29:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .foto-30:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .container-fluid1 {
   width: 100%;
+  /*@-webkit-keyframes heartbeat {
+      from {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-transform-origin: center center;
+          transform-origin: center center;
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+      }
+      10% {
+          -webkit-transform: scale(0.91);
+          transform: scale(0.91);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+      }
+      17% {
+          -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+      }
+      33% {
+          -webkit-transform: scale(0.87);
+          transform: scale(0.87);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+      }
+      45% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+      }
+  }
+  @keyframes heartbeat {
+      from {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-transform-origin: center center;
+          transform-origin: center center;
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+      }
+      10% {
+          -webkit-transform: scale(0.91);
+          transform: scale(0.91);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+      }
+      17% {
+          -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+      }
+      33% {
+          -webkit-transform: scale(0.87);
+          transform: scale(0.87);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+      }
+      45% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+      }
+  } */
 }
 .container-fluid1 .btn-primary {
   color: rgb(0, 0, 0);
@@ -448,66 +550,8 @@ html {
   border: none;
 }
 .container-fluid1 .btn-primary:hover {
-  background-color: rgba(176, 167, 129, 0.9);
-  color: rgb(0, 0, 0);
-  -webkit-animation: heartbeat 2s ease-in-out infinite both;
-  animation: heartbeat 2s ease-in-out infinite both;
-}
-@-webkit-keyframes heartbeat {
-  from {
-    transform: scale(1);
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-}
-@keyframes heartbeat {
-  from {
-    transform: scale(1);
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .container-fluid1 .row {
   display: flex;
@@ -517,6 +561,9 @@ html {
 .container-fluid1 .card {
   padding: 20px;
   margin: 20px;
+}
+.container-fluid1 .card:hover {
+  box-shadow: 5px 5px 5px 5px rgb(0, 0, 0);
 }
 .container-fluid1 .card-text {
   font-size: 15px;
@@ -530,7 +577,7 @@ html {
 .container-fluid1 .subir {
   height: 40px;
   width: 40px;
-  border: 5px solid rgb(33, 33, 54);
+  border: 5px solid rgba(176, 167, 129, 0.5);
   color: rgb(0, 0, 0);
   position: fixed;
   bottom: 20px;
@@ -542,35 +589,35 @@ html {
 }
 
 .tit-titulo1 {
-  background-color: rgba(176, 167, 129, 0.9);
+  background-color: rgba(176, 167, 129, 0.5);
   width: 100%;
   text-align: center;
   border-radius: 1rem;
 }
 
 .tit-titulo2 {
-  background-color: rgba(176, 167, 129, 0.9);
+  background-color: rgba(176, 167, 129, 0.5);
   width: 100%;
   text-align: center;
   border-radius: 1rem;
 }
 
 .tit-titulo3 {
-  background-color: rgba(176, 167, 129, 0.9);
+  background-color: rgba(176, 167, 129, 0.5);
   width: 100%;
   text-align: center;
   border-radius: 1rem;
 }
 
 .tit-titulo4 {
-  background-color: rgba(176, 167, 129, 0.9);
+  background-color: rgba(176, 167, 129, 0.5);
   width: 100%;
   text-align: center;
   border-radius: 1rem;
 }
 
 .tit-titulo5 {
-  background-color: rgba(176, 167, 129, 0.9);
+  background-color: rgba(176, 167, 129, 0.5);
   width: 100%;
   text-align: center;
   border-radius: 1rem;
@@ -599,69 +646,32 @@ html {
   color: rgb(0, 0, 0);
   text-align: center;
   margin-top: 50px;
+  background-color: rgba(176, 167, 129, 0.5);
+  padding: 10px;
+  border-radius: 1em;
 }
 .carru .section2 {
   font-family: "Libre Baskerville", serif;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 60px;
-  -webkit-animation: heartbeat 5s ease-in-out infinite both;
-  animation: heartbeat 5s ease-in-out infinite both;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-@-webkit-keyframes heartbeat {
-  from {
-    transform: scale(1);
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
+.carru .section2 #carro {
+  width: 300px;
+  height: 200px;
 }
-@keyframes heartbeat {
-  from {
-    transform: scale(1);
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
+.carru .section2 #cardd {
+  width: 300px;
+  height: 200px;
+}
+.carru .section2 #wsp {
+  width: 300px;
+  height: 200px;
 }
 .carru .tex {
   font-size: 20px;
@@ -684,18 +694,51 @@ html {
 }
 .cabezal h1 {
   color: rgb(0, 0, 0);
-  margin-top: 20px;
+  margin-top: 90px;
   margin-bottom: 30px;
   border-radius: 1em;
   font-family: "Merriweather Sans", sans-serif;
+  font-weight: 600;
+  z-index: 1;
+  background-color: rgba(176, 167, 129, 0.5);
+  border-radius: 1em;
+  -webkit-animation: tracking-in-contract 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
 }
 .cabezal h2 {
-  background-color: rgba(176, 167, 129, 0.9);
+  background-color: rgba(176, 167, 129, 0.5);
   border-radius: 1em;
-  font-family: "Secular One", sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   color: rgb(0, 0, 0);
   width: 100%;
   margin-bottom: 80px;
+  font-weight: 600;
 }
 
 /*fin titulos con  h1 y h2*//*# sourceMappingURL=style.css.map */

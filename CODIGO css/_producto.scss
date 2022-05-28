@@ -4,25 +4,25 @@ html{
 }
 @for $i from 1 through 30{
     .foto-#{$i}:hover {
-        transform: scale(1.2,1.2);
+        transform: scale(1.1,1.1);
     }
 }
 .container-fluid1{
     width: $var1;
     .btn-primary{
         color: $color2;
-        background-color: $color1;
+        background-color: $color7;
     }
     .btn{
         border: none;
     }
     .btn-primary:hover{
-        background-color:  $color1;
-        color: $color2;
-        -webkit-animation: heartbeat 2s ease-in-out infinite both;
-        animation: heartbeat 2s ease-in-out infinite both;
+        background-color:  $color2;
+        color: $color4;
+        //-webkit-animation: heartbeat 2s ease-in-out infinite both;
+        //animation: heartbeat 2s ease-in-out infinite both;
     }
-    @-webkit-keyframes heartbeat {
+    /*@-webkit-keyframes heartbeat {
         from {
             -webkit-transform: scale(1);
             transform: scale(1);
@@ -89,7 +89,7 @@ html{
             -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
         }
-    }
+    } */ // ANIMACION PARA "COMPRAR"
     .row{
         display: flex;
         flex-flow: row wrap;
@@ -98,6 +98,9 @@ html{
     .card{
         padding: $size1;
         margin: $size1;
+    }
+    .card:hover{
+        box-shadow: 5px 5px 5px 5px $color2;
     }
     .card-text{
         font-size: $size1 - 5;
@@ -111,7 +114,7 @@ html{
     .subir{
         height: $size1 + 20;
         width: $size1 + 20;
-        border: 5px solid $color7;
+        border: 5px solid $color1;
         color: $color2;
         position: fixed;
         bottom: $size1;

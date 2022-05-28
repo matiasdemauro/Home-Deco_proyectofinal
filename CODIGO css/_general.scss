@@ -100,8 +100,8 @@
             justify-content: center;
             justify-content: space-between;
             justify-content: space-around;
-            height: $height - 200;
-            margin-top: $size2 + 10;
+            margin-top: $size2 + 30;
+            flex-wrap: wrap;
             .cubos{
                 margin-top: $size1 + 10;
                 margin-bottom: $height - 300;
@@ -109,10 +109,10 @@
                 margin-bottom: $size2;
             }
             ul{
-                font-size: $size1 - 5;
+                font-size: 20px;
             }
             li{
-                font-size: $size1 - 8;
+                font-size: 13px;
                 list-style: none;
                 line-height: 2em;
                 padding-bottom: 2px;
@@ -127,9 +127,7 @@
             margin-top: $height - 100;
             background-color: $color1;
         }
-        .pie{
-            margin-top: $size2 + 40;
-        }
+        
         h3{
             font-size: $size1 - 5;
             margin-top: $size2;
@@ -144,8 +142,10 @@
             margin-bottom: $size1 + 30 ;
             }
         .redes a{
-            color: $color2;
+            //color: $color2;
             margin-bottom: -40px;
+            justify-content: space-between;
+            margin-right: 15px;
         }
     }
 } 
